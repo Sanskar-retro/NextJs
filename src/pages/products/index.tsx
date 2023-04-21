@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Product from '@/components/Product';
+import { ProductModel } from '@/Model/Product';
 
 
 function index() {
@@ -7,25 +9,21 @@ function index() {
     const [products, setProducts] = useState([]);
     const getProducts = async () =>{
         const data = await axios.get('https://dummyjson.com/products')
-        setProducts(data.data);  
+        setProducts(data.data.products);  
     }
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
        getProducts()
     }, [])
 
-    const setProduct = () => {
-        if(products){
-            products.map(product =>{
-                    
-            })
-        }
-    }
     
     return (
-        <div>
+        <div className='flex flex-wrap'>
             {
-                
+                products && products.map((product : ProductModel) =>{
+                    console.log(product)
+                    return <><Product product={product}/></>
+                })
             }
         </div>
     );
