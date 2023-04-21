@@ -37,7 +37,7 @@ function prodId() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     getProduct();
-  }, [router.query.prodId]);
+  }, []);
   return (
     <div className="p-2">
       <Card
