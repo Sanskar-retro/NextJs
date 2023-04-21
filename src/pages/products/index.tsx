@@ -24,6 +24,7 @@ function index() {
       }
     });
     setProducts(a);
+    //eslint-disable-next-line
   }, [searchProducts]);
 
   const getProducts = async () => {
