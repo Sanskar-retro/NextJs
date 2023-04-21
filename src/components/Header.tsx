@@ -6,7 +6,7 @@ function Header() {
       <header className="p-2 bg-slate-500 drop-shadow-lg flex">
         <Image
           alt="Logo"
-          src="/../public/OIP.jpg"
+          src="/OIP.jpg"
           width={100}
           height={100}
           className="rounded-full"

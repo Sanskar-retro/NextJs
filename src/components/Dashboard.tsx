@@ -23,7 +23,7 @@ function Dashboard() {
   ];
   const thumbnailTemplate = (item: any) => {
     return (
-      <Image src="/../public/OIP.jpg" alt="No Image" width={200} height={100} />
+      <Image src="/OIP.jpg" alt="No Image" width={200} height={100} />
     );
   };
 

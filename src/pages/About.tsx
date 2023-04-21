@@ -15,7 +15,7 @@ function About() {
         laboriosam, sint
         <Image
           alt="No Image"
-          src="/../public/OIP.jpg"
+          src="/OIP.jpg"
           width={1000}
           height={500}
           className="m-auto p-10"
