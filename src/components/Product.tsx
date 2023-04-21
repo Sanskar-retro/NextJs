@@ -1,4 +1,3 @@
-import { ProductModel } from '@/Model/Product';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card } from 'primereact/card';
@@ -6,7 +5,6 @@ import { Rating } from 'primereact/rating';
 
 function Product(props : any) {
     const {product} = props;
-    console.log(product)
     const header = (
         <Image alt="Card" src={product.thumbnail} width={300} height={300} layout="responsive" className='rounded-md'/>
     );

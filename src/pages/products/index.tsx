@@ -21,7 +21,6 @@ function index() {
         <div className='flex flex-wrap'>
             {
                 products && products.map((product : ProductModel) =>{
-                    console.log(product)
                     return <><Product product={product}/></>
                 })
             }

@@ -7,12 +7,16 @@ import { Card } from "primereact/card";
 import { Galleria } from "primereact/galleria";
 import { Rating } from "primereact/rating";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addtoCart } from '../../features/cart';
 
 function prodId() {
   const styles = {
     width: "50%",
     height: "auto",
   };
+  //eslint-disable-next-line
+  const dispatch = useDispatch();
   let currentProduct: ProductModel = {};
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
@@ -63,7 +67,9 @@ function prodId() {
         <Rating value={product.rating} readOnly cancel={false} />
         <br />
         <div className="flex flex-wrap justify-evenly">
-            <Button className="m-2"> Add to Cart </Button>
+            <Button className="m-2" onClick={()=>{
+                dispatch(addtoCart(product))
+            }}> Add to Cart </Button>
 
             <Button className="m-2"> Shop Now </Button>
         </div>
