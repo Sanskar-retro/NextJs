@@ -14,19 +14,19 @@ function Header() {
         <div className="routes">
           <ul className="flex flex-wrap">
             <Link href="/">
-                <li className="cursor-pointer m-8 text-slate-300">Home</li>
+              <li className="cursor-pointer m-8 text-slate-300">Home</li>
             </Link>
             <Link href="/About">
-                <li className="cursor-pointer m-8 text-slate-300">About</li>
+              <li className="cursor-pointer m-8 text-slate-300">About</li>
             </Link>
             <Link href="/Products">
-                <li className="cursor-pointer m-8 text-slate-300">Products</li>
+              <li className="cursor-pointer m-8 text-slate-300">Products</li>
             </Link>
             <Link href="/Cart">
-                <li className="cursor-pointer m-8 text-slate-300">Cart</li>
+              <li className="cursor-pointer m-8 text-slate-300">Cart</li>
             </Link>
             <Link href="/User">
-                <li className="cursor-pointer m-8 text-slate-300">User</li>
+              <li className="cursor-pointer m-8 text-slate-300">User</li>
             </Link>
           </ul>
         </div>

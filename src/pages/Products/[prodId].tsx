@@ -8,7 +8,7 @@ import { Galleria } from "primereact/galleria";
 import { Rating } from "primereact/rating";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { addtoCart } from '../../features/cart';
+import { addtoCart } from "../../features/cart";
 
 function prodId() {
   const styles = {
@@ -67,11 +67,17 @@ function prodId() {
         <Rating value={product.rating} readOnly cancel={false} />
         <br />
         <div className="flex flex-wrap justify-evenly">
-            <Button className="m-2" onClick={()=>{
-                dispatch(addtoCart(product))
-            }}> Add to Cart </Button>
+          <Button
+            className="m-2"
+            onClick={() => {
+              dispatch(addtoCart(product));
+            }}
+          >
+            {" "}
+            Add to Cart{" "}
+          </Button>
 
-            <Button className="m-2"> Shop Now </Button>
+          <Button className="m-2"> Shop Now </Button>
         </div>
       </Card>
     </div>

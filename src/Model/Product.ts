@@ -1,5 +1,5 @@
 export class ProductModel {
-    id ?: number;
+    id?: number;
     title?: string;
     description?: string;
     price?: number;
@@ -9,6 +9,6 @@ export class ProductModel {
     brand?: string;
     category?: string;
     thumbnail?: string;
-    images ?: [String];
+    images?: [String];
 }
 
